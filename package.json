@@ -1,0 +1,7 @@
+{
+  "name": "lich-thi-dau-html",
+  "version": "1.0.0",
+  "description": "HTML bàn giao trang chủ Lịch thi đấu - VnExpress Thể Thao",
+  "scripts": { "build": "node build.js", "start": "node dev-server.js" },
+  "license": "ISC"
+}

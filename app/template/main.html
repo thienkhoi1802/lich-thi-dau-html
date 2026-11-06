@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <!-- build:title -->
+  </title>
+  <link rel="icon" type="image/x-icon" href="https://s1.vnecdn.net/vnexpress/restruct/i/v9525/logo/favicon.ico">
+  <!-- VnExpress Design System (VDS) Core -->
+  <link rel="stylesheet" href="vds-0.5.0/fonts/vds-fonts.css">
+  <link rel="stylesheet" href="vds-0.5.0/tokens/vds.css">
+  <link rel="stylesheet" href="vds-0.5.0/components/vds-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/vds-adaptations.css">
+  <script src="vds-0.5.0/components/vds-components.js" defer></script>
+  <script src="vds/vds-helper.js"></script>
+  <script src="js/vds-icons.js"></script>
+  <!-- build:head2 -->
+  <!-- build:head -->
+</head>
+<body>
+
+  <header class="vne-header-wrapper">
+    <div class="vne-container">
+      <div class="vne-topbar">
+        <div class="vne-header-left">
+          <div class="vne-breadcrumbs">
+            <a href="/" class="vds-logo-link" title="Báo điện tử VnExpress">
+              <vds-logo name="Logo__VnExpress__Standard" aria-label="VnExpress" class="vds-header-logo"></vds-logo>
+            </a>
+            <span class="vne-breadcrumb-slash">/</span>
+            <a href="/">Thể thao</a>
+            <span class="vne-breadcrumb-slash">/</span>
+            <a href="/" style="color: var(--vds-text-regular); font-weight: 700;">Bóng đá</a>
+          </div>
+
+          <div class="vne-nav-tabs" role="tablist" aria-label="Điều hướng dữ liệu bóng đá">
+            <a href="/lich-thi-dau" class="vne-tab-btn" id="tab-future" onclick="switchMode('future', true, event)" role="tab" aria-selected="false">
+              <vds-icon name="Calendar__Regular__16" size="16"></vds-icon>
+              <span>Lịch thi đấu</span>
+            </a>
+            <a href="/ket-qua" class="vne-tab-btn" id="tab-past" onclick="switchMode('past', true, event)" role="tab" aria-selected="false">
+              <vds-icon name="SportSoccer__Regular__16" size="16"></vds-icon>
+              <span>Kết quả</span>
+            </a>
+            <a href="/live" class="vne-tab-btn" id="tab-live" onclick="switchMode('live', true, event)" role="tab" aria-selected="false">
+              <span class="live-dot-pulse"></span>
+              <span>LIVE</span>
+              <span class="vne-live-pill-badge" id="live-count-badge">0</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="vne-header-right">
+          <span id="current-datetime-display"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- build:content -->
+
+  <!-- Footer (scs.jpeg & demo-final.jpeg) -->
+  <footer class="vne-footer">
+    <div class="vne-container">
+      <div class="vne-footer-links">
+        <a href="javascript:filterLeague(39)">Ngoại hạng Anh</a>
+        <a href="javascript:filterLeague(2)">Champions League</a>
+        <a href="javascript:filterLeague(140)">La Liga</a>
+        <a href="javascript:filterLeague(78)">Bundesliga</a>
+        <a href="javascript:filterLeague(135)">Serie A</a>
+        <a href="javascript:filterLeague(61)">Ligue 1</a>
+        <a href="javascript:filterLeague(340)">V-League</a>
+        <a href="javascript:filterLeague(5)">Nations League</a>
+        <a href="javascript:filterLeague(307)">Saudi Pro League</a>
+        <a href="javascript:filterLeague(253)">MLS</a>
+      </div>
+
+      <div class="vne-footer-banner">
+        <span>DỰ ĐOÁN TỶ SỐ BÓNG ĐÁ</span>
+        <div style="display: flex;gap: var(--vds-spacing-2xs);">
+          <a href="#">Tham gia nhận thưởng &gt;</a>
+        </div>
+      </div>
+
+      <div class="vne-footer-info">
+        <div style="font-weight: 700; color: var(--vne-text-main);">Báo điện tử VnExpress</div>
+        <div>Báo tiếng Việt nhiều người xem nhất. Thuộc Bộ Khoa học và Công nghệ.</div>
+        <div>Số giấy phép: 548/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 24/08/2021.</div>
+        <div style="margin-top: var(--vds-spacing-3xs);">&copy; 1997-2026. Toàn bộ bản quyền thuộc VnExpress.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <!-- build:script -->
+  <!-- build:script2 -->
+</body>
+</html>
